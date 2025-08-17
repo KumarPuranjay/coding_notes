@@ -55,7 +55,7 @@
 ### Step 4: SSH and Initial Server Setup
 - Connect to the server using SSH and your key pair:
   ```
-  ssh -i my-openvpn-key.pem openvpnas@
+  ssh -i my-openvpn-key.pem openvpnas@<your-server-ip>
   ```
 - On first login, complete guided setup:
   - Accept agreements
@@ -66,12 +66,12 @@
   - Set **admin username ("openvpn")** and strong password
 
 ### Step 5: Access Admin Portal
-- Visit: `https://:943/admin`
+- Visit: `https://<your-server-ip>:943/admin`
 - Login with your chosen admin credentials.
 - Review connected users and server settings.
 
 ### Step 6: Download VPN Client
-- Go to: `https://:943/`
+- Go to: `https://<your-server-ip>:943/`
 - Log in with your VPN user credentials.
 - **Download the platform-specific OpenVPN client** — configuration is pre-embedded!
 - Install and launch the client.
